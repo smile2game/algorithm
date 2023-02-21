@@ -27,6 +27,6 @@ int main()
     for(int i = a.size() - 1; i >= 0; i--) {A.push_back(a[i]-'0');}
     for(int i = b.size() -1;i >= 0; i--) {B.push_back(b[i]-'0');}
     auto C = add(A,B);
-    cout << C.size() <<'\n';
+    // cout << C.size() <<'\n';
     for(int i=C.size()-1;i>=0;i--) {cout << C[i];}
 }
