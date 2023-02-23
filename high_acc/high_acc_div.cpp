@@ -19,7 +19,6 @@ vector<int> div(vector<int> &A, int &b,int &r)
     return C;
 }
 
-
 int main()
 {
     string a;
