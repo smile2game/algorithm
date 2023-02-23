@@ -15,10 +15,10 @@ int main()
 {
     int n;
     cin >> n;
-    // int k=3;
-    // search(n,k);
-    int res;
-    while(n)  cout<<lowbit(n)<<endl,n-= lowbit(n),res++;
-    cout << res;
+    for(int i=31;i>=0;i--) //目前操作系统中的int是32位
+    {
+        cout << (n >> i & 1);
+    }
+    
     return  0;  
 }
