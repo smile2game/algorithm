@@ -13,7 +13,6 @@ vector<PII> merge_interval(vector<PII> segs)
     vector<PII> res;
     int st,ed = -2e9+10;
     sort(segs.begin(),segs.end());
-
     for(auto seg : segs)
     {   
         if(seg.first>ed)
@@ -24,9 +23,7 @@ vector<PII> merge_interval(vector<PII> segs)
         else ed =  max(ed,seg.second);   //小于，则更新右端点，不需要添加
     }
     if(st!=-2e9+10) res.push_back({st,ed}); //添加上更新的区间，小于的情况，且不是初始
-
     return res;
-
 }
 
 int main()
